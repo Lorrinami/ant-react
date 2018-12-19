@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Card, Button } from 'antd';
-import {connect} from 'dva';
 
 export default class PuzzleCardsPage extends Component {
     constructor(props) {
@@ -57,7 +56,7 @@ export default class PuzzleCardsPage extends Component {
                     })
                 }
                 <div>
-                    <Button onClick={this.addNewCard}>添加卡片</Button>
+                     <Button onClick={this.addNewCard}>添加卡片</Button>
                 </div>
             </div>
         )

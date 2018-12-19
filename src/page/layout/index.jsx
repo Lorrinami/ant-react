@@ -10,6 +10,8 @@ import Analysis from '../dashboard/analysis'
 import Monitor from '../dashboard/monitor'
 import Workplace from '../dashboard/workplace'
 import PuzzleCardsPage from '../puzzlecard.js'
+import ReduxPage from '../dashboard/redux'
+import AsyncReduxPage from '../dashboard/AsyncRedux'
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -56,6 +58,8 @@ export default class BasicLayout extends React.Component {
                                     <Menu.Item key="3"><Link to="/dashboard/monitor">监控页</Link></Menu.Item>
                                     <Menu.Item key="4"><Link to="/dashboard/workplace">工作台</Link></Menu.Item>
                                     <Menu.Item key="5"><Link to="/puzzlecards">卡片列表</Link></Menu.Item>
+                                    <Menu.Item key="6"><Link to="/dashboard/redux">Redux Page</Link></Menu.Item>
+                                    <Menu.Item key="7"><Link to="/dashboard/asyncreduc">AsyncRedux Page</Link></Menu.Item>
                                 </SubMenu>
                             </Menu>
                         </Sider>
@@ -66,6 +70,8 @@ export default class BasicLayout extends React.Component {
                                 <Route path="/dashboard/monitor" component={Monitor} />
                                 <Route path="/dashboard/workplace" component={Workplace} />
                                 <Route path='/puzzlecards' component={PuzzleCardsPage} />
+                                <Route path='/dashboard/redux' component={ReduxPage} />
+                                <Route path='/dashboard/asyncreduc' component={AsyncReduxPage}/>
                             </Content>
                             <Footer style={{ textAlign: 'center' }}>Ant Design @2018 Created by Ant UED</Footer>
                         </Layout>
